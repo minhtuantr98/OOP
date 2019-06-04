@@ -1,0 +1,35 @@
+C:\Users\HP\source\repos\Winform\Forms\Forms\bin\Debug\Forms.exe.config
+C:\Users\HP\source\repos\Winform\Forms\Forms\bin\Debug\Forms.exe
+C:\Users\HP\source\repos\Winform\Forms\Forms\bin\Debug\Forms.pdb
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.Properties.Resources.resources
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.exe
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.pdb
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.fLogin.resources
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.LapDonHang.resources
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.fMenu.resources
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.AddShipper.resources
+C:\Users\HP\source\repos\Winform\Forms\Forms\obj\Debug\Forms.CapNhatShipper.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\bin\Debug\Forms.exe.config
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\bin\Debug\Forms.exe
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\bin\Debug\Forms.pdb
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.AddShipper.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.AlterShipper.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.CapNhatShipper.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.GanShipper.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.LapDonHang.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.fMenu.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.fLogin.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.Properties.Resources.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.ThongKeDoanhThu.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.ThongKeDonHang.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.ThongKeKhuVuc.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.TinhTrangGiaoHang.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.TinhTrangHoatDong.resources
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.exe
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.pdb
+E:\downloads\Đồ án OOP\QuanLyShipper-master\Forms\Forms\obj\Debug\Forms.csprojAssemblyReference.cache
