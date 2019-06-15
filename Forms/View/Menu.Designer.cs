@@ -144,7 +144,7 @@
 			this.thốngKêĐơnHàngTheoShipperToolStripMenuItem.Name = "thốngKêĐơnHàngTheoShipperToolStripMenuItem";
 			this.thốngKêĐơnHàngTheoShipperToolStripMenuItem.Size = new System.Drawing.Size(264, 22);
 			this.thốngKêĐơnHàngTheoShipperToolStripMenuItem.Text = "Thống Kê Đơn Hàng Theo Shipper";
-			this.thốngKêĐơnHàngTheoShipperToolStripMenuItem.Click += new System.EventHandler(this.thốngKêĐơnHàngTheoShipperToolStripMenuItem_Click);
+			
 			// 
 			// giớiThiệuToolStripMenuItem
 			// 

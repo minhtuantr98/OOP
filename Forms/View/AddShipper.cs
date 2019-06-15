@@ -26,21 +26,21 @@ namespace QuanLyShipper
 		private void btn_reset_Click(object sender, EventArgs e)
 		{
 
-			//if (dataGridView1.Rows.Count == 0)
-			//{
-			//	MessageBox.Show("Không có dữ liệu!", "Thông báo");
-			//	return;
-			//}
+			if (dataGridView1.Rows.Count == 0)
+			{
+				MessageBox.Show("Không có dữ liệu!", "Thông báo");
+				return;
+			}
+			string ma = txt_maShipper.Text;
+			if (MessageBox.Show("Bạn có muốn xóa không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+			{
+				if (shipper1.Delete_Shipper(ma))
+				{
+					MessageBox.Show("Xóa thành công");
+					dataGridView1.DataSource = shipper1.Load_On();
+				}
 
-			//if (MessageBox.Show("Bạn có muốn xóa không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-			//{
-			//	if(shipper1.Delete_Shipper(txt_maShipper.Text))
-			//	{
-			//		MessageBox.Show("Xóa thành công");
-			//		dataGridView1.DataSource = shipper1.Load_On();
-			//	}
-
-			//}
+			}
 		}
 
 		ShipperController shipper = new ShipperController();
@@ -52,9 +52,10 @@ namespace QuanLyShipper
 			}
 			else
 			{
-				if (shipper.Add_Shipper(txt_maShipper.Text, txt_tenShipper.Text, "1", txt_mail.Text, txt_birthday.Text, txt_sdt.Text, cbx_Quan.Text, "1"))
+				if (shipper.Add_Shipper(txt_maShipper.Text, txt_tenShipper.Text, rNam.Checked ? true : false, txt_mail.Text, txt_birthday.Text, txt_sdt.Text, cbx_Quan.SelectedValue.ToString(), "true"))
 				{
 					MessageBox.Show("Thêm mới shipper thành công");
+					dataGridView1.DataSource = shipper1.Load_On();
 				}
 				else
 				{
@@ -66,7 +67,9 @@ namespace QuanLyShipper
 
 		private void cbx_City_SelectedIndexChanged(object sender, EventArgs e)
 		{
-
+			//cbx_Quan.DataSource = shipper1.load_KhuVuc(cbx_City.SelectedValue);
+			//cbx_Quan.ValueMember = "id";
+			//cbx_Quan.DisplayMember = "KhuVuc";
 		}
 
 		ShipperModel shipper1 = new ShipperModel();
@@ -75,9 +78,14 @@ namespace QuanLyShipper
 		{
 			txt_maShipper.Text = QuanLyShipper.Model.XuLy.CreateKey("SHIPPER", "SP");
 			txt_maShipper.Enabled = false;
+
 			cbx_City.DataSource = shipper1.load_City();
 			cbx_City.ValueMember = "id";
 			cbx_City.DisplayMember = "KhuVuc";
+
+			cbx_Quan.DataSource = shipper1.load_KhuVuc(cbx_City.SelectedValue);
+			cbx_Quan.ValueMember = "id";
+			cbx_Quan.DisplayMember = "KhuVuc";
 
 			dataGridView1.DataSource = shipper1.Load_On();
 			dataGridView1.Columns[0].HeaderText = "Mã Shipper";
@@ -131,6 +139,18 @@ namespace QuanLyShipper
 			fMenu f = new fMenu();
 			f.StartPosition = FormStartPosition.CenterScreen;
 			f.Visible = true;
+		}
+
+		private void cbx_Quan_SelectionChangeCommitted(object sender, EventArgs e)
+		{
+		
+		}
+
+		private void cbx_City_SelectionChangeCommitted(object sender, EventArgs e)
+		{
+			cbx_Quan.DataSource = shipper1.load_KhuVuc(cbx_City.SelectedValue);
+			cbx_Quan.ValueMember = "id";
+			cbx_Quan.DisplayMember = "KhuVuc";
 		}
 	}
 }

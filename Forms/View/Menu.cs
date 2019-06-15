@@ -61,12 +61,7 @@ namespace QuanLyShipper
 			Visible = false;
 		}
 
-		private void thốngKêĐơnHàngTheoShipperToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			ThongKeDonHang f = new ThongKeDonHang();
-			f.Show();
-			Visible = false;
-		}
+
 
 		private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
 		{

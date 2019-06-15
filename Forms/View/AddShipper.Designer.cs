@@ -165,6 +165,7 @@
 			this.cbx_City.Size = new System.Drawing.Size(121, 21);
 			this.cbx_City.TabIndex = 22;
 			this.cbx_City.SelectedIndexChanged += new System.EventHandler(this.cbx_City_SelectedIndexChanged);
+			this.cbx_City.SelectionChangeCommitted += new System.EventHandler(this.cbx_City_SelectionChangeCommitted);
 			// 
 			// btn_add
 			// 
@@ -195,6 +196,7 @@
 			this.cbx_Quan.Name = "cbx_Quan";
 			this.cbx_Quan.Size = new System.Drawing.Size(121, 21);
 			this.cbx_Quan.TabIndex = 27;
+			this.cbx_Quan.SelectionChangeCommitted += new System.EventHandler(this.cbx_Quan_SelectionChangeCommitted);
 			// 
 			// rNam
 			// 

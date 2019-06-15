@@ -112,7 +112,6 @@ C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.fMenu.resources
 C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.fLogin.resources
 C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\Forms.Properties.Resources.resources
 C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.ThongKeDoanhThu.resources
-C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.ThongKeDonHang.resources
 C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.ThongKeKhuVuc.resources
 C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.TinhTrangGiaoHang.resources
 C:\Users\HP\OneDrive\Desktop\OOP\Forms\obj\Debug\QuanLyShipper.TinhTrangHoatDong.resources

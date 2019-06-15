@@ -18,9 +18,9 @@ namespace QuanLyShipper
             return re;
         }
 
-        public bool Add_Shipper(String maShipper, String tenShipper, String gioiTinh, String email, String ngaySinh, String sdt, String khuVuc, String trangThai)
+        public bool Add_Shipper(String maShipper, String tenShipper, bool gioiTinh, String email, String ngaySinh, String sdt, String khuVuc, String trangThai)
         {
-            String lenh1 = "insert into SHIPPER(MaShipper,TenShipper,GioiTinh,Email,NgaySinh,SDT,KhuVucPhuTrach,TrangThai) values('"+maShipper+"','"+tenShipper+"',"+gioiTinh+",'"+email+"','"+ngaySinh+"','"+sdt+"',"+khuVuc+","+trangThai+")";
+            String lenh1 = "insert into SHIPPER(MaShipper,TenShipper,GioiTinh,Email,NgaySinh,SDT,KhuVucPhuTrach,TrangThai) values('"+maShipper+"',N'"+tenShipper+"','"+gioiTinh+"',N'"+email+"','"+ngaySinh+"','"+sdt+"',"+khuVuc+",'"+trangThai+"')";
             bool re = false;
             if(XuLy.ExecuteNonQuery(lenh1) > 0)
             {

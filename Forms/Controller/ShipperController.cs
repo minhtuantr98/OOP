@@ -9,7 +9,7 @@ namespace QuanLyShipper.Controller
     class ShipperController
     {
         ShipperModel shipper = new ShipperModel();
-        public bool Add_Shipper(String maShipper, String tenShipper, String gioiTinh, String email, String ngaySinh, String sdt, String khuVuc, String trangThai)
+        public bool Add_Shipper(String maShipper, String tenShipper, bool gioiTinh, String email, String ngaySinh, String sdt, String khuVuc, String trangThai)
         {
             return shipper.Add_Shipper(maShipper, tenShipper, gioiTinh, email, ngaySinh, sdt, khuVuc, trangThai);
         }
