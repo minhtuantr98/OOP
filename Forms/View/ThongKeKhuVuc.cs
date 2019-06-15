@@ -27,12 +27,26 @@ namespace QuanLyShipper
 			cbx_khuVuc.DataSource = thongke1.load_On_KhuVuc();
 			cbx_khuVuc.DisplayMember = "KhuVuc";
 			cbx_khuVuc.ValueMember = "KhuVuc";
+			cbx_khuVuc.SelectedValue = -1;
 		}
 
 		private void cbx_khuVuc_SelectionChangeCommitted(object sender, EventArgs e)
 		{
 			dataGridView1.DataSource = thongke1.load_KhuVuc(cbx_khuVuc.SelectedValue);
+			double dt = 0;
+			for(int i=0;i<dataGridView1.Rows.Count-1;i++)
+			{
+				dt += Convert.ToDouble(dataGridView1.Rows[i].Cells[11].Value.ToString());
+			}
+			txtDoanhthu.Text = dt.ToString();
 		}
 
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			fMenu f = new fMenu();
+			f.StartPosition = FormStartPosition.CenterScreen;
+			f.Visible = true;
+		}
 	}
 }

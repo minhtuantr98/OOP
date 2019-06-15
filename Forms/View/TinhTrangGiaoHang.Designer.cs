@@ -39,6 +39,7 @@
 			this.date_Start = new System.Windows.Forms.DateTimePicker();
 			this.date_End = new System.Windows.Forms.DateTimePicker();
 			this.btn_lapDH = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -130,6 +131,8 @@
 			// date_Start
 			// 
 			this.date_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.date_Start.CustomFormat = "dd/MM/yyyy";
+			this.date_Start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.date_Start.Location = new System.Drawing.Point(566, 97);
 			this.date_Start.Name = "date_Start";
 			this.date_Start.Size = new System.Drawing.Size(200, 20);
@@ -138,6 +141,8 @@
 			// date_End
 			// 
 			this.date_End.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.date_End.CustomFormat = "dd/MM/yyyy";
+			this.date_End.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.date_End.Location = new System.Drawing.Point(566, 138);
 			this.date_End.Name = "date_End";
 			this.date_End.Size = new System.Drawing.Size(200, 20);
@@ -146,7 +151,7 @@
 			// btn_lapDH
 			// 
 			this.btn_lapDH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.btn_lapDH.Location = new System.Drawing.Point(668, 404);
+			this.btn_lapDH.Location = new System.Drawing.Point(566, 404);
 			this.btn_lapDH.Name = "btn_lapDH";
 			this.btn_lapDH.Size = new System.Drawing.Size(98, 54);
 			this.btn_lapDH.TabIndex = 33;
@@ -154,12 +159,24 @@
 			this.btn_lapDH.UseVisualStyleBackColor = true;
 			this.btn_lapDH.Click += new System.EventHandler(this.btn_lapDH_Click);
 			// 
+			// button2
+			// 
+			this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.button2.Location = new System.Drawing.Point(679, 404);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(98, 54);
+			this.button2.TabIndex = 35;
+			this.button2.Text = "Quay lại";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
 			// TinhTrangGiaoHang
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.ClientSize = new System.Drawing.Size(781, 470);
+			this.Controls.Add(this.button2);
 			this.Controls.Add(this.btn_lapDH);
 			this.Controls.Add(this.date_End);
 			this.Controls.Add(this.date_Start);
@@ -193,5 +210,6 @@
 		private System.Windows.Forms.DateTimePicker date_Start;
 		private System.Windows.Forms.DateTimePicker date_End;
 		private System.Windows.Forms.Button btn_lapDH;
+		private System.Windows.Forms.Button button2;
 	}
 }

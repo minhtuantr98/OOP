@@ -32,5 +32,13 @@ namespace QuanLyShipper
 			GanShipper f = new GanShipper();
 			f.Show();
 		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			fMenu f = new fMenu();
+			f.StartPosition = FormStartPosition.CenterScreen;
+			f.Visible = true;
+		}
 	}
 }

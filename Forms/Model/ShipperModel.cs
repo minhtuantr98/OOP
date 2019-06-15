@@ -43,7 +43,7 @@ namespace QuanLyShipper
 
         public bool ToFix(String maShipper, String tenShipper, bool gioiTinh, String email, String ngaySinh, String sdt, String khuVuc, String trangThai)
         {
-            String lenh3 = "update SHIPPER set TenShipper = N'" + tenShipper + "', GioiTinh = " + gioiTinh + ", Email = N'" + email + "', Ngaysinh = N'" + ngaySinh + "', SDT = N'" + sdt + "', KhuVucPhuTrach = N'" + khuVuc + "', TrangThai = " + trangThai;
+            String lenh3 = "update SHIPPER set TenShipper = N'" + tenShipper + "', GioiTinh = N'" + gioiTinh + "', Email = N'" + email + "', Ngaysinh = N'" + ngaySinh + "', SDT = N'" + sdt + "', KhuVucPhuTrach = N'" + khuVuc + "', TrangThai = N'" + trangThai+"' ";
             bool re = false;
             if (XuLy.ExecuteNonQuery(lenh3) > 0)
             {
@@ -67,5 +67,5 @@ namespace QuanLyShipper
             re = XuLy.TaoBang(lenh_3);
             return re;
         }
-    }
+	}
 }

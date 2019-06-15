@@ -27,8 +27,10 @@ namespace QuanLyShipper
 
 		private void cậpNhậtShipperToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+
 			AddShipper f = new AddShipper();
 			f.Show();
+			Visible = false;
 		}
 
 		private void kiểmTraTìnhTrạngGiaoToolStripMenuItem_Click(object sender, EventArgs e)

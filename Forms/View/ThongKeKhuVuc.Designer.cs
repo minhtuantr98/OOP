@@ -36,6 +36,9 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.cbx_khuVuc = new System.Windows.Forms.ComboBox();
 			this.label5 = new System.Windows.Forms.Label();
+			this.txtDoanhthu = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -47,12 +50,14 @@
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(57, 179);
 			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(687, 262);
+			this.dataGridView1.Size = new System.Drawing.Size(687, 234);
 			this.dataGridView1.TabIndex = 51;
 			// 
 			// date_End
 			// 
 			this.date_End.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.date_End.CustomFormat = "dd/MM/yyyy";
+			this.date_End.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.date_End.Location = new System.Drawing.Point(544, 135);
 			this.date_End.Name = "date_End";
 			this.date_End.Size = new System.Drawing.Size(200, 20);
@@ -61,6 +66,8 @@
 			// date_Start
 			// 
 			this.date_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.date_Start.CustomFormat = "dd/MM/yyyy";
+			this.date_Start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.date_Start.Location = new System.Drawing.Point(544, 94);
 			this.date_Start.Name = "date_Start";
 			this.date_Start.Size = new System.Drawing.Size(200, 20);
@@ -123,12 +130,42 @@
 			this.label5.TabIndex = 52;
 			this.label5.Text = "Khu Vực";
 			// 
+			// txtDoanhthu
+			// 
+			this.txtDoanhthu.Location = new System.Drawing.Point(159, 433);
+			this.txtDoanhthu.Name = "txtDoanhthu";
+			this.txtDoanhthu.Size = new System.Drawing.Size(168, 20);
+			this.txtDoanhthu.TabIndex = 54;
+			// 
+			// button1
+			// 
+			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.button1.Location = new System.Drawing.Point(662, 423);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(82, 39);
+			this.button1.TabIndex = 55;
+			this.button1.Text = "Quay Lại";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(54, 436);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(83, 13);
+			this.label3.TabIndex = 58;
+			this.label3.Text = "Tổng doanh thu";
+			// 
 			// ThongKeKhuVuc
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.ClientSize = new System.Drawing.Size(781, 470);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.txtDoanhthu);
 			this.Controls.Add(this.cbx_khuVuc);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.dataGridView1);
@@ -157,5 +194,8 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.ComboBox cbx_khuVuc;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox txtDoanhthu;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label3;
 	}
 }

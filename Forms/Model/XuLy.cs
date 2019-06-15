@@ -68,5 +68,44 @@ namespace QuanLyShipper.Model
             }
             return re;
         }
-    }
+		public static string CreateKey(string table, string Key)// hàm tạo giá trị mã cho các bảng
+		{
+			DataTable dt = new DataTable();
+			dt = XuLy.TaoBang("Select * from " + table + " ");
+			int coso = 0;
+
+			if (dt.Rows.Count == 0)
+			{
+				coso = 1;
+			}
+			else if (dt.Rows.Count == 1 && int.Parse(dt.Rows[0][0].ToString().Substring(2, 3)) == 1) // nếu danh sách nhân viên có 1 nhân viên và mã người này là NV001
+			{
+				coso = 2;
+			}
+			else if (dt.Rows.Count == 1 && int.Parse(dt.Rows[0][0].ToString().Substring(2, 3)) > 1) // nếu danh sách có 1 nhân viên mà mã người này khác NV001
+			{
+				coso = 1;
+			}
+			else
+			{
+				for (int i = 0; i < dt.Rows.Count - 1; i++)
+				{
+					if (int.Parse(dt.Rows[i + 1][0].ToString().Substring(2, 3)) - int.Parse(dt.Rows[i][0].ToString().Substring(2, 3)) > 1)
+					{
+						coso = int.Parse(dt.Rows[i][0].ToString().Substring(2, 3)) + 1;
+						break;
+					}
+				}
+				coso = int.Parse(dt.Rows[dt.Rows.Count - 1][0].ToString().Substring(2, 3)) + 1;
+			}
+			string ma = "";
+			if (coso < 10)
+				return ma = Key + "00" + coso;
+			else if (coso < 100)
+				return ma = Key + "0" + coso;
+			else
+				return ma = Key + coso;
+
+		}
+	}
 }

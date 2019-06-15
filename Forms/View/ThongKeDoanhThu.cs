@@ -36,6 +36,13 @@ namespace QuanLyShipper
 		private void cbx_maShipper_SelectionChangeCommitted(object sender, EventArgs e)
 		{
 			dataGridView1.DataSource = thongke1.load_DoanhThu(cbx_maShipper.SelectedValue);
+			double dt = 0;
+			for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+			{
+				dt += Convert.ToDouble(dataGridView1.Rows[i].Cells[11].Value.ToString());
+			}
+			txtDoanhthu.Text = dt.ToString();
+
 		}
 
 		private void label3_Click(object sender, EventArgs e)
@@ -61,6 +68,14 @@ namespace QuanLyShipper
 		private void label4_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			fMenu f = new fMenu();
+			f.StartPosition = FormStartPosition.CenterScreen;
+			f.Visible = true;
 		}
 	}
 }

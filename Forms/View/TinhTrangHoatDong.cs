@@ -33,11 +33,20 @@ namespace QuanLyShipper
 			cbx_maShipper.DataSource = tinhtrang1.Load_TrangThai_KhuVuc(cbx_khuVuc.SelectedValue);
 			cbx_maShipper.DisplayMember = "TenShipper";
 			cbx_maShipper.ValueMember = "MaShipper";
+			cbx_maShipper.SelectedIndex = -1;
 		}
 
 		private void cbx_maShipper_SelectionChangeCommitted(object sender, EventArgs e)
 		{
 			dataGridView1.DataSource = tinhtrang1.Load_TrangThai_MaS(cbx_khuVuc.SelectedValue,cbx_maShipper.SelectedValue);
+		}
+
+		private void btnQuay_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			fMenu f = new fMenu();
+			f.StartPosition = FormStartPosition.CenterScreen;
+			f.Visible = true;
 		}
 	}
 }

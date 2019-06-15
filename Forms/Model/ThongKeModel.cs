@@ -29,7 +29,7 @@ namespace QuanLyShipper
 		public DataTable load_DoanhThu(object MaShipper)
         {
             DataTable re;
-            String lenh_1 = "select TenShipper,sum(PhiShip) as DoanhThu from DONHANG join SHIPPER on DONHANG.Shipper = SHIPPER.MaShipper where Shipper =" + MaShipper +" group by TenShipper " ;
+            String lenh_1 = "Select TenShipper,MaDonHang,MaNhanVien,TenKhachHang,DONHANG.SDT,Tinh,Huyen,DCChiTiet,MoTa,TienHang,PhiShip,TongTienDonHang from DonHang join Shipper on DonHang.Shipper = Shipper.MaShipper where DonHang.Shipper = N'" + MaShipper + "' ";
             re = XuLy.TaoBang(lenh_1);
             return re;
         }

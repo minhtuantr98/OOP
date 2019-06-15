@@ -34,6 +34,7 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.cbx_khuVuc = new System.Windows.Forms.ComboBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.btnQuay = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -79,9 +80,9 @@
 			this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(397, 108);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(81, 17);
+			this.label2.Size = new System.Drawing.Size(87, 17);
 			this.label2.TabIndex = 31;
-			this.label2.Text = "Mã Shipper";
+			this.label2.Text = "Tên Shipper";
 			// 
 			// cbx_khuVuc
 			// 
@@ -99,18 +100,30 @@
 			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(38, 167);
+			this.dataGridView1.Location = new System.Drawing.Point(47, 152);
 			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(693, 277);
+			this.dataGridView1.Size = new System.Drawing.Size(693, 287);
 			this.dataGridView1.TabIndex = 34;
+			// 
+			// btnQuay
+			// 
+			this.btnQuay.Location = new System.Drawing.Point(631, 445);
+			this.btnQuay.Name = "btnQuay";
+			this.btnQuay.Size = new System.Drawing.Size(109, 41);
+			this.btnQuay.TabIndex = 35;
+			this.btnQuay.Text = "Quay lại";
+			this.btnQuay.UseVisualStyleBackColor = true;
+			this.btnQuay.Click += new System.EventHandler(this.btnQuay_Click);
 			// 
 			// TinhTrangHoatDong
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.ClientSize = new System.Drawing.Size(781, 470);
+			this.ClientSize = new System.Drawing.Size(781, 498);
+			this.Controls.Add(this.btnQuay);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.cbx_khuVuc);
 			this.Controls.Add(this.cbx_maShipper);
@@ -135,5 +148,6 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.ComboBox cbx_khuVuc;
 		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.Button btnQuay;
 	}
 }

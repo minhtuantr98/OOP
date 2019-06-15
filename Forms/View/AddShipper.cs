@@ -70,8 +70,11 @@ namespace QuanLyShipper
 		}
 
 		ShipperModel shipper1 = new ShipperModel();
+		
 		private void AddShipper_Load(object sender, EventArgs e)
 		{
+			txt_maShipper.Text = QuanLyShipper.Model.XuLy.CreateKey("SHIPPER", "SP");
+			txt_maShipper.Enabled = false;
 			cbx_City.DataSource = shipper1.load_City();
 			cbx_City.ValueMember = "id";
 			cbx_City.DisplayMember = "KhuVuc";
@@ -91,25 +94,6 @@ namespace QuanLyShipper
 
 		}
 
-
-		private void button1_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void btnSua_Click(object sender, EventArgs e)
-		{
-			if (shipper1.ToFix(txt_maShipper.Text, txt_tenShipper.Text, rNam.Checked ? true : false, txt_mail.Text, txt_birthday.Text, txt_sdt.Text, cbx_Quan.Text, "true"))
-			{
-				MessageBox.Show("Bạn thêm thành công");
-			}
-			else
-			{
-				MessageBox.Show("Bạn thêm thất bại");
-			}
-			dataGridView1.DataSource = shipper1.Load_On();
-		}
-
 		private void dataGridView1_CellClick_2(object sender, DataGridViewCellEventArgs e)
 		{
 			txt_maShipper.Text = dataGridView1.CurrentRow.Cells["MaShipper"].Value.ToString();
@@ -126,6 +110,27 @@ namespace QuanLyShipper
 			else
 				rNu.Checked = true;
 			txt_maShipper.Enabled = false;
+		}
+
+		private void btnSua_Click_1(object sender, EventArgs e)
+		{
+			if (shipper1.ToFix(txt_maShipper.Text, txt_tenShipper.Text, rNam.Checked ? true : false, txt_mail.Text, txt_birthday.Text, txt_sdt.Text, cbx_Quan.Text, "true"))
+			{
+				MessageBox.Show("Bạn sửa thành công");
+			}
+			else
+			{
+				MessageBox.Show("Bạn sửa thất bại");
+			}
+			dataGridView1.DataSource = shipper1.Load_On();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.Close();
+			fMenu f = new fMenu();
+			f.StartPosition = FormStartPosition.CenterScreen;
+			f.Visible = true;
 		}
 	}
 }

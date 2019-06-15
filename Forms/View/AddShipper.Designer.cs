@@ -54,8 +54,6 @@
 			// 
 			// txt_maShipper
 			// 
-			this.txt_maShipper.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.txt_maShipper.Location = new System.Drawing.Point(153, 30);
 			this.txt_maShipper.Name = "txt_maShipper";
 			this.txt_maShipper.Size = new System.Drawing.Size(121, 20);
@@ -73,8 +71,6 @@
 			// 
 			// txt_tenShipper
 			// 
-			this.txt_tenShipper.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.txt_tenShipper.Location = new System.Drawing.Point(153, 80);
 			this.txt_tenShipper.Name = "txt_tenShipper";
 			this.txt_tenShipper.Size = new System.Drawing.Size(121, 20);
@@ -102,8 +98,6 @@
 			// 
 			// txt_sdt
 			// 
-			this.txt_sdt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.txt_sdt.Location = new System.Drawing.Point(153, 211);
 			this.txt_sdt.Name = "txt_sdt";
 			this.txt_sdt.Size = new System.Drawing.Size(121, 20);
@@ -121,8 +115,6 @@
 			// 
 			// txt_birthday
 			// 
-			this.txt_birthday.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.txt_birthday.Location = new System.Drawing.Point(153, 173);
 			this.txt_birthday.Name = "txt_birthday";
 			this.txt_birthday.Size = new System.Drawing.Size(121, 20);
@@ -140,8 +132,6 @@
 			// 
 			// txt_mail
 			// 
-			this.txt_mail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.txt_mail.Location = new System.Drawing.Point(153, 261);
 			this.txt_mail.Name = "txt_mail";
 			this.txt_mail.Size = new System.Drawing.Size(121, 20);
@@ -169,8 +159,6 @@
 			// 
 			// cbx_City
 			// 
-			this.cbx_City.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.cbx_City.FormattingEnabled = true;
 			this.cbx_City.Location = new System.Drawing.Point(153, 301);
 			this.cbx_City.Name = "cbx_City";
@@ -202,8 +190,6 @@
 			// 
 			// cbx_Quan
 			// 
-			this.cbx_Quan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.cbx_Quan.FormattingEnabled = true;
 			this.cbx_Quan.Location = new System.Drawing.Point(153, 344);
 			this.cbx_Quan.Name = "cbx_Quan";
@@ -212,8 +198,6 @@
 			// 
 			// rNam
 			// 
-			this.rNam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.rNam.AutoSize = true;
 			this.rNam.Location = new System.Drawing.Point(153, 128);
 			this.rNam.Name = "rNam";
@@ -225,8 +209,6 @@
 			// 
 			// rNu
 			// 
-			this.rNu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.rNu.AutoSize = true;
 			this.rNu.Location = new System.Drawing.Point(217, 128);
 			this.rNu.Name = "rNu";
@@ -238,7 +220,8 @@
 			// 
 			// dataGridView1
 			// 
-			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -257,6 +240,7 @@
 			this.btnSua.TabIndex = 31;
 			this.btnSua.Text = "Sửa";
 			this.btnSua.UseVisualStyleBackColor = true;
+			this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
 			// 
 			// button1
 			// 
@@ -265,8 +249,9 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(82, 39);
 			this.button1.TabIndex = 32;
-			this.button1.Text = "Hủy";
+			this.button1.Text = "Quay Lại";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// AddShipper
 			// 
